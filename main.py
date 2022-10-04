@@ -18,8 +18,7 @@ params = {
 }
 
 def send():
-    response = requests.post('https://oauth.magticom.ge/auth/user/activation-code/send', params=pa
-rams, headers=headers, verify=False)
+    response = requests.post('https://oauth.magticom.ge/auth/user/activation-code/send', params=params, headers=headers, verify=False)
     print('sms sent')
 
 processes = []
